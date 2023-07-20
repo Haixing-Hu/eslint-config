@@ -97,7 +97,7 @@ module.exports = {
       'consistent': true,
     }],
     'prefer-destructuring': 'off',
-    'quote-props': ['error', 'consistent-as-needed'],
+    'quote-props': ['error', 'consistent'],
     'semi': ['error', 'always'],
     'spaced-comment': ['error', 'always', { exceptions: ['*'] }],
   },
