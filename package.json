@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Haixing-Hu/eslint-config",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm publish --registry='https://registry.npmjs.org/' --access public"
+    "deploy": "npm publish --registry='https://registry.npmjs.com/' --access public"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
