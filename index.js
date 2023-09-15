@@ -1,15 +1,17 @@
 /*******************************************************************************
  *
- *    Copyright (c) 2017 - 2022
- *    Nanjing Smart Medical Investment Operation Service Co. Ltd.
+ *    Copyright (c) 2022 - 2023.
+ *    Haixing Hu, Qubit Co. Ltd.
+ *
  *    All rights reserved.
  *
  ******************************************************************************/
 
 /**
- * 符合智慧医疗公司JavaScript编码规范的ESLint规则配置。
+ * ESLint rule configuration that complies with the JavaScript coding standard
+ * of our company.
  *
- * @author 胡海星
+ * @author Haixing Hu
  */
 module.exports = {
   root: true,
@@ -25,21 +27,24 @@ module.exports = {
     protractor: true,
   },
   extends: [
-    'airbnb-base',                // 以 Airbnb 的JavaScript编码风格规则文件为基础
-    'plugin:vue/recommended',     // 加上Vue.js官方推荐的Vue组件编码风格规则
+    'airbnb-base',            // Based on the Airbnb’s base coding standard
+    'plugin:vue/recommended', // Plus the Vue.js recommended coding standard
   ],
-  rules: {                        // 再加上智慧医疗自己内部的规则
-    // 不强制使用 CamelCase
+  rules: {                    // Coupled with the internal rules of our company
+    // Do not force use of `CamelCase`
     'camelcase': 'off',
-    // 类方法中不强制使用this关键词进行调用。
+    // It is not mandatory to use `this` keyword to call class methods.
     'class-methods-use-this': 'off',
-    // 当最后一个元素或属性与闭括号 ] 或 } 在 不同的行时，要求使用拖尾逗号；
-    // 当在同一行时，禁止使用拖尾逗号
+    // A trailing comma is required when the last element or attribute is on a
+    // different line than the closing bracket `]` or `}`;
+    // Trailing commas are prohibited when on the same line
     'comma-dangle': ['error', 'always-multiline'],
     'dot-notation': 'off',
-    // 函数定义或函数调用时，括号处是否换行，需要两个括号保持一致
+    // When defining a function or calling a function, whether to wrap the
+    // parentheses or not requires the two parentheses to be consistent.
     'function-paren-newline': ['error', 'consistent'],
-    // 函数调用时，括号处是否换行，需要两个括号保持一致
+    // When calling a function, whether to wrap the brackets in a new line
+    // requires the two brackets to be consistent.
     'function-call-argument-newline': ['error', 'consistent'],
     'global-require': 'off',
     'import/default': 'error',
@@ -52,7 +57,8 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
-    // 临时性修复 ESLint8+ 对有装饰器的 property 的缩进错误判断的问题
+    // Temporarily fix the problem of ESLint8+ misjudging the indentation of
+    // properties with decorators
     // https://github.com/eslint/eslint/issues/15299
     'indent': ['error', 2, {
       'SwitchCase': 1,
@@ -75,14 +81,15 @@ module.exports = {
       ignoreRegExpLiterals: true,
     }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    // 允许使用 continue 关键词
+    // Allow the `continue` keyword
     'no-continue': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-else-return': 'off',
     'no-irregular-whitespace': 'off',
-    // 允许 new 一个对象但不将其赋值给某个变量
+    // Allow `new` an object but not assign it to a variable
     'no-new': 'off',
-    // 允许创建基本类型 String, Number, Boolean 的包装器对象实例
+    // Allows creation of wrapper object instances of basic types `String`,
+    // `Number`, `Boolean`
     'no-new-wrappers': 'off',
     'no-multi-spaces': ['error', { ignoreEOLComments: true }],
     'no-param-reassign': 'off',
@@ -90,7 +97,8 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    // 允许将一个表达式单独作为一条语句而不将其值赋予任何变量
+    // Allows an expression to stand alone as a statement without assigning its
+    // value to any variable
     'no-unused-expressions': 'off',
     'object-curly-newline': ['warn', {
       'multiline': true,
@@ -105,6 +113,3 @@ module.exports = {
     parser: '@babel/eslint-parser',
   },
 };
-
-
-

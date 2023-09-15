@@ -1,6 +1,6 @@
 {
   "name": "@haixing_hu/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ESLint rule configuration for the JavaScript coding style.",
   "keywords": [
     "eslint",
