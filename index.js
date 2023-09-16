@@ -8,8 +8,8 @@
  ******************************************************************************/
 
 /**
- * ESLint rule configuration that complies with the JavaScript coding
- * specifications of our companies.
+ * ESLint rule configuration that complies with the JavaScript coding standard
+ * of our company.
  *
  * @author Haixing Hu
  */
@@ -27,17 +27,17 @@ module.exports = {
     protractor: true,
   },
   extends: [
-    'airbnb-base',            // Based on Airbnb’s base coding standard
+    'airbnb-base',            // Based on the Airbnb’s base coding standard
     'plugin:vue/recommended', // Plus the Vue.js recommended coding standard
   ],
-  rules: {                    // Coupled with our internal rules
-    // Do not force the use of CamelCase
+  rules: {                    // Coupled with the internal rules of our company
+    // Do not force use of `CamelCase`
     'camelcase': 'off',
-    // It is not mandatory to use this keyword in class methods to call.
+    // It is not mandatory to use `this` keyword to call class methods.
     'class-methods-use-this': 'off',
     // A trailing comma is required when the last element or attribute is on a
-    // different line than the closing bracket] or };
-    // Disable trailing commas when on the same line
+    // different line than the closing bracket `]` or `}`;
+    // Trailing commas are prohibited when on the same line
     'comma-dangle': ['error', 'always-multiline'],
     'dot-notation': 'off',
     // When defining a function or calling a function, whether to wrap the
