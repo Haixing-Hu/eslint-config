@@ -28,7 +28,6 @@ module.exports = {
   },
   extends: [
     'airbnb-base',            // Based on the Airbnb’s base coding standard
-    'plugin:vue/recommended', // Plus the Vue.js recommended coding standard
   ],
   rules: {                    // Coupled with the internal rules of our company
     // Do not force use of `CamelCase`
@@ -108,8 +107,5 @@ module.exports = {
     'quote-props': ['error', 'consistent'],
     'semi': ['error', 'always'],
     'spaced-comment': ['error', 'always', { exceptions: ['*'] }],
-  },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
   },
 };
