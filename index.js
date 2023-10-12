@@ -108,4 +108,7 @@ module.exports = {
     'semi': ['error', 'always'],
     'spaced-comment': ['error', 'always', { exceptions: ['*'] }],
   },
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
 };
