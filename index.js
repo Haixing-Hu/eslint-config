@@ -1,11 +1,11 @@
-/*******************************************************************************
- *
- *    Copyright (c) 2022 - 2023.
- *    Haixing Hu, Qubit Co. Ltd.
- *
- *    All rights reserved.
- *
- ******************************************************************************/
+////////////////////////////////////////////////////////////////////////////////
+//
+//    Copyright (c) 2022 - 2023.
+//    Haixing Hu, Qubit Co. Ltd.
+//
+//    All rights reserved.
+//
+////////////////////////////////////////////////////////////////////////////////
 
 /**
  * ESLint rule configuration that complies with the JavaScript coding standard
@@ -106,7 +106,17 @@ module.exports = {
     'prefer-destructuring': 'off',
     'quote-props': ['error', 'consistent'],
     'semi': ['error', 'always'],
-    'spaced-comment': ['error', 'always', { exceptions: ['*'] }],
+    'spaced-comment': ['error', 'always', {
+      "line": {
+        "markers": ["/"],
+        "exceptions": ["/", "-"]
+      },
+      "block": {
+        "markers": ["!"],
+        "exceptions": ["*", "=", "-"],
+        "balanced": true
+      }
+    }],
   },
   parserOptions: {
     ecmaVersion: 'latest',
