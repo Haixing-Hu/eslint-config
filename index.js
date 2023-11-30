@@ -79,6 +79,10 @@ module.exports = {
       ignoreTemplateLiterals: true,
       ignoreRegExpLiterals: true,
     }],
+    // Allows assignments in test conditions only if they are enclosed in
+    // parentheses (for example, to allow reassigning a variable in the test of
+    // a while or do...while loop)
+    'no-cond-assign': ['error', 'except-parens'],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // Allow the `continue` keyword
     'no-continue': 'off',
