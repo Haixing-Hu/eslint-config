@@ -103,6 +103,8 @@ module.exports = {
     // Allows an expression to stand alone as a statement without assigning its
     // value to any variable
     'no-unused-expressions': 'off',
+    // ignore the unused variable `_`
+    'no-unused-vars': ['error', { 'argsIgnorePattern': '^_$' }],
     'object-curly-newline': ['warn', {
       'multiline': true,
       'consistent': true,
