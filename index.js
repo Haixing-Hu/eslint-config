@@ -104,7 +104,7 @@ module.exports = {
     // value to any variable
     'no-unused-expressions': 'off',
     // ignore the unused variable `_`
-    'no-unused-vars': ['error', { 'argsIgnorePattern': '^_$' }],
+    'no-unused-vars': ['warn', { 'varsIgnorePattern': '^_$' }],
     'object-curly-newline': ['warn', {
       'multiline': true,
       'consistent': true,
