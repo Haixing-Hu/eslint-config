@@ -1,4 +1,4 @@
-# @haixing_hu/eslint-config
+# @qubit-ltd/eslint-config
 
 A customized ESLint rules configuration for JavaScript coding style.
 
@@ -9,20 +9,20 @@ First install the [ESLint](https://eslint.org/) with the following command:
 ```sh
 yarn add --dev eslint
 ```
-Next, install `@haixing_hu/eslint-config`:
+Next, install `@qubit-ltd/eslint-config`:
 
 ```sh
-yarn add --dev @haixing_hu/eslint-config
+yarn add --dev @qubit-ltd/eslint-config
 ```
 
 ## Usage
 
-Add `@haixing_hu/eslint-config` to the `extends` section of your `.eslintrc` configuration file:
+Add `@qubit-ltd/eslint-config` to the `extends` section of your `.eslintrc` configuration file:
 
 ```json
 {
     "extends": [
-        "@haixing_hu/eslint-config"
+        "@qubit-ltd/eslint-config"
     ]
 }
 ```
@@ -32,7 +32,7 @@ A full example of `.eslintrc` configuration file is as follows:
 {
     "root": true,
     "extends": [
-        "@haixing_hu/eslint-config"
+        "@qubit-ltd/eslint-config"
     ]
 }
 ```
